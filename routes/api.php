@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\FileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::post('search', [DataController::class, 'Search']);
 Route::post('create', [DataController::class, 'Create']);
 Route::post('updateid', [DataController::class, 'Update']);
 Route::post('deleteid', [DataController::class, 'Delete']);
+Route::post('fileupload', [FileController::class, 'fileUpload']);
